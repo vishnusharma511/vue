@@ -336,6 +336,7 @@ figcaption {
     }
 }
 
+
 .post-list {
     margin-top: 20px;
 }
@@ -504,7 +505,7 @@ figcaption {
 }
 
 .post-content blockquote.small {
-/ / display: flex;
+    display: flex;
     position: relative;
     flex-direction: column;
     border: 2px solid rgba(152, 152, 152, 0.15);

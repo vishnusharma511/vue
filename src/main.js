@@ -1,4 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue"
+import App from "./App.vue"
+import router from '@/router'
+import AppDate from '@/components/AppDate'
 
-createApp(App).mount('#app')
+const forumApp = createApp(App);
+forumApp.use(router);
+forumApp.component("AppDate", AppDate)
+forumApp.mount("#app");
