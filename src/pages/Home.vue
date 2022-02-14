@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import sorceData from '@/data.json'
+// import sorceData from '@/data.json'
 // import ThreadList from '@/components/ThreadList'
 // import ForumList from '@/components/ForumList'
 import CategoryList from '@/components/CategoryList'
@@ -14,11 +14,16 @@ export default({
         // ForumList,
         CategoryList
     },
-    data (){
-        return {
-            // threads:sorceData.threads,
-            // forums : sorceData.forums,
-            categories :sorceData.categories
+    // data (){
+    //     return {
+    //         // threads:sorceData.threads,
+    //         // forums : sorceData.forums,
+    //         categories :this.$store.state.categories
+    //     }
+    // },
+    computed: {
+        categories(){
+            return this.$store.state.categories
         }
     }
 })
